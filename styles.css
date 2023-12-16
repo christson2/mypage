@@ -1,477 +1,560 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;	
-	font-family: "Roboto", ubuntu, sans-serif;
-	font-size: 1rem;
-	/*font-weight: 400;*/
-	line-height: 1.5;
-	color: #6c757d;
-	text-align: left;       
-}
-/*Header section starts here*/
-#navbar{	
-	overflow: hidden;
-	position: fixed;
-	z-index: 7;
-	top: 0;
-	width: 100%;
-	background-color: #0BCEAF;
-	display: flex;
-	justify-content: flex-start;
-	padding: 5px;
-	font-family: sans-serif;
-	height: 80px;
-}
-#logo{
-	font-size: 1.8rem;
-	font-style: italic;
-	color: blue;
-	margin-right: 20rem;
-	text-transform: capitalize;
-}
-#logo span{
-	color: red;
-	font-size: 2em;
-}
-#navbar nav{
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;	
-	font-weight: bolder;
-	font-size: 17px;
-
-
-}
-#navbar nav a{
-	margin-right: 40px;
-	float: left;
-	text-decoration: none;
-	color: white;	
-	line-height: 30px;
-	display: block;
-	font-size: 1.2em;
-}
-/*nav a:active{
-	color: green;
-}*/
-nav a:hover{
-	color: #fff;
-	background-color: #0BCEAF;
-}
-.header{
-	background-color: rgb(11 206 175);
-	height: 755px;
-}
-.header .hero{	
-	display: flex;
-	justify-content: center;
-	padding-right: 100px;	
-	padding-top: 200px;	
-}
-.header .hero #profile{
-	width: 400px;
-	padding-left: 30px;
-	margin-right: 50px;	
-	background-image: url("images/afol.jpg");
-	height: 400px;
-	border-radius: 50%;
-	background-size: cover;
-}
-.name p{
-	color: white;
-	font-size: 2em;
-	font-weight: normal;
-}
-.hero h1{
-	-webkit-text-stroke: 2px #ffffff;
-	color: rgb(11 206 175);
-	font-style: italic;
-	font-size: 4em;
-	font-family: roboto;
-	font-weight: 900;
-	text-transform: uppercase;	
-}
-#cv{
-	padding: 5px 10px;	
-	margin-right: 430px;	
-	border: 1px solid white;
-	border-radius: 25px;
-	text-align: center;	
-	font-size: 1.3rem;	
-	text-decoration: none;
-}
-.hero #cv:hover{
-	background-color: blue;
-}
-.hero #cv a{
-	text-decoration: none;
-	color: white;
-}
-/*header section ends here*/
-
-
-/*Main section starts here*/
-/*This is the beginning of About section*/
-
-
-
-.heading-background{
-	-webkit-text-stroke: 2px #dee2e6;
-	color: transparent;
-	font-family: roboto;
-	text-align: center;	
-	text-transform: uppercase;
-	font-size: 8em;
-	font-weight: bolder;
-	margin-top: 50px;
-	padding-top: 50px;	
-}
-.main-headings{	
-	text-align: center;
-	font-size: 3em;
-	text-transform: uppercase;
-	font-weight: bolder;
-	color: rgb(11 206 175);
-	position: relative;
-	bottom: 135px;
-	padding-top: 5px;
-}
-.sub-headings{
-	font-size: 2em;
-	font-weight: 900px !important;
-	text-transform: capitalize;
-	padding-top: 50px;
-	color: #343A40;
-}
-#about{	
-	display: flex;
-	width: 1300px;
-	height: 500px;
-	justify-content:center;
-	padding-left: 60px;
-	
-	margin: auto;
-}
-#about #my-photo{
-	/*border: 10px solid red;*/
-	width: 1300px;
-	height: 450px;
-	background-image: url('images/afol.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin: 30px;
-}
-#about #description{
-	padding-right: 30px;	
-}
-.bio{
-	display: flex;
-	justify-content: space-between;	
-	text-align: justify;
-}
-#about #description p{	
-	text-align: justify;
-	font-size: 1.2em;
-	line-height: 30px;
-}
-#about #description .bio ul{
-	list-style: none;
-}
-
-#about #description .bio ul li{
-	font-size: 1.2em;
-	line-height: 50px;
-
-}
-.bio span{
-	color: rgb(11 206 175);
-	font-weight: bolder;
-}
-#hire-learn{
-	/*border: 10px solid red;*/
-	display: flex;
-	justify-content: center;
-	padding: 40px;
-	height: 150px;
-	width: 600px;
-}
-#hire, #learn{
-	border: 1px solid #0BCEAF;
-	padding: 10px 15px;	
-	border-radius: 25px;
-	margin: 50px;
-	text-decoration: none;
-	color: #0BCEAF;
-}
-#hire{
-	margin-left: -100px;
-}
-
-#learn{
-	margin-left: -10px;		
-}
-/*About section ends here*/
-
-
-/*Education and experience starts here*/
-
-.edu-exp{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 1200px;
-	margin: auto;
-}
-.edu-exp .experience{
-	width: 600px;
-}
-.education, .experience{
-	border-left: 1px solid green;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin-top: 30px;
-	text-align: justify;
-}
-.edu-exp span{
-	font-weight: bolder;
-
-}
-
-.edu-exp h4{	
-	font-size: 1.3em;
-	font-weight: bold;
-	text-align: left;
-	margin-bottom: 0.25rem;
-	margin-top: 5px;
-	color: #343B20;	
-}
-	
-}
-.education, .experience span{
-	font-size: 1.1em;
-	font-weight: bolder;	
-	margin-top: 5px;
-
-}
-
-
-/*<!-- Education and Experience page ends here -->
-
-
-<!-- Skill section starts here -->*/
-
-.skill-set{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-		/*margin-left: 50px;*/
-}
-.skill-box{
-	width: 600px;
-	margin: 20px;
-}
-.container {
-	width: 100%;
-	background-color: #ddd;
-	border-radius: 25px;
-}
-
-.html {width: 98%;}
-.css {width: 80%;}
-.javascript {width: 65%; }
-.php {width: 60%;}
-.angular {width: 35%;}
-.wordpress {width: 20%;}
-
-.html, .css, .javascript, .php, .angular, .wordpress{	
-	border-radius: 25px; 
-	background-color: rgb(11 206 175);	
-	font-weight: bold;
-	color: #fff;	
-}
-.skill-box p{
-	font-weight: bold;
-	color: #343B20;
-	margin-top: 20px;
-	font-size: 1.2rem;
-}
-
-/*<!-- Service segment sterts here -->*/
-.service-center{
-	display: block;
-	margin-right: 50px;
-	margin-left: 50px;		
-}
-.service-container{
-	margin: auto;
-	width: 1300px;
-	display: flex;
-	flex-direction: row;		
-}
-.service-contents{
-	margin-bottom: 35px;
-	padding-left: 50px;
-	padding-right: 50px;
-	text-align: center;	
-}
-.service-head{
-	display: flex;
-	flex-direction: row;
-	margin-left: 50px;
-	margin-bottom: 25px;
-}
-.service-head .bulet{
-	/*margin: 20px;*/
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background-color: #0BCEAF;
-	/*position: relative;
-	top: 80px;
-	left: 0;*/	
-}
-.service{	
-	padding-top: 10px;
-	padding-left: 20px;
-	text-transform: capitalize;
-	text-align: center;
-	font-weight: bolder;
-	font-size: 1.5rem;
-	position: relative;
-	/*left: 30px;
-	bottom: 30px;*/
-	
-}
-.service-description{
-	text-align: center;
-	margin-bottom: 10px;
-}
-.service-link{
-	color: #0BCEAF;
-	text-decoration: none;
-	font-size: 1.2rem;
-}
-.service-link:hover{
-	color: white;
-	background-color: #0BCEAF;
-}
-/*<!-- Service segment ends here -->*/
-
-
-/*Gallery segment starts here*/
-.gallery-links{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.gallery-links a{
-	margin: 30px;
-	border: 1px solid rgb(11 206 175);
-	padding: 10px 15px;	
-	border-radius: 25px;	
-	text-decoration: none;
-	color: rgb(11 206 175);
-	margin-bottom: 50px;
-}
-.gallery-links a:hover{
-	color: #fff;
-	background-color: #0BCEAF;	
-}
-.photo-grid{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 1200px;
-	margin: auto;
-	margin-left: 250px;	
-	padding-left: 50px;	   
-	}
-.photo-grid img{	
-	border: 10px solid white;
-	margin: 2px;	
-	border-radius: 1rem;	
-}
-/*Gallery segment endss here*/
-
-/*testimony section starts here*/
-
-
-/*testimony section ends here*/
-
-/*Blog section starts here*/
-
-
-/*Blog section starts here*/
-
-/*Contact section starts here*/
-.form-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	width: 700px;
-	margin: auto;	
-	padding: 20px;
-	border: 1px solid #0BCEAF;
-	border-radius: 5px;
-	margin-bottom: 60px;
-}
-.form-container input{
-	margin: 10px;
-	padding: 0.7rem;	
-	border-radius: 25px;
-	border: 1px solid #0BCEAF;	
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", ubuntu, sans-serif;
+    font-size: 1rem;
     line-height: 1.5;
-    width: 300px;
+    color: #6c757d;
+    text-align: left;
+}
+
+/* Header section starts here */
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    width: 100%;
+    background-color: #0BCEAF;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    font-family: sans-serif;
+    height: 80px;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: blue;
+    margin-right: 20rem;
+    text-transform: capitalize;
+}
+
+#logo span {
+    color: red;
+    font-size: 2em;
+}
+
+#navbar nav {
+    margin: auto;
+    display: flex;
+    flex-direction: column;  /* Mobile-first: stack navigation items vertically */
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;  /* Fill the available height */
+}
+
+#navbar nav a {
+    margin-bottom: 10px;  /* Add some space between navigation items */
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #0BCEAF;
+}
+
+.header {
+    background-color: rgb(11 206 175);
+    height: 755px;
+}
+
+.header .hero {
+    display: flex;
+    flex-direction: column;  /* Mobile-first: stack hero items vertically */
+    align-items: center;
+    padding: 20px;
+}
+
+.header .hero #profile {
+    width: 200px;
+    height: 200px;
+    background-image: url("images/afol.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.name p {
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.hero h1 {
+    -webkit-text-stroke: 2px #ffffff;
+    color: rgb(11 206 175);
+    font-style: italic;
+    font-size: 2.5em;
+    font-family: roboto;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#cv {
+    margin-top: 20px;  /* Add space between hero and CV */
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.hero #cv:hover {
+    background-color: blue;
+}
+
+.hero #cv a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ... Continue with the rest of your CSS for tablet and desktop views */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", ubuntu, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: left;
+}
+
+/* Header section starts here */
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    width: 100%;
+    background-color: #0BCEAF;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: blue;
+    text-transform: capitalize;
+}
+
+#logo span {
+    color: red;
+    font-size: 2em;
+}
+
+#navbar nav {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: #0BCEAF;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+#navbar.nav-open nav {
+    display: flex;
+}
+
+#navbar nav a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    display: block;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #0BCEAF;
+}
+
+.header {
+    background-color: rgb(11 206 175);
+    height: 755px;
+}
+
+.header .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header .hero #profile {
+    width: 200px;
+    height: 200px;
+    background-image: url("images/afol.jpg");
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.hero h1 {
+    -webkit-text-stroke: 2px #ffffff;
+    color: rgb(11 206 175);
+    font-style: italic;
+    font-size: 2em;
+    font-family: roboto;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#cv {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+.hero #cv:hover {
+    background-color: blue;
+}
+
+.hero #cv a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main section starts here */
+/* This is the beginning of About section */
+
+.heading-background {
+    -webkit-text-stroke: 2px #dee2e6;
+    color: transparent;
+    font-family: roboto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: bolder;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.main-headings {
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(11 206 175);
+    position: relative;
+    bottom: 135px;
+    padding-top: 5px;
+}
+
+.sub-headings {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 20px;
+    color: #343A40;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#about #my-photo {
+    width: 100%;
+    height: 300px;
+    background-image: url('images/afol.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#about #description {
+    padding: 20px;
+    text-align: justify;
+}
+
+.bio {
+    text-align: left;
+}
+
+#about #description p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#about #description .bio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#about #description .bio ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.bio span {
+    color: rgb(11 206 175);
+    font-weight: bold;
+}
+
+#hire-learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#hire,
+#learn {
+    border: 1px solid #0BCEAF;
+    border-radius: 25px;
+    text-decoration: none;
     color: #0BCEAF;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+}
 
+#learn {
+    margin-top: 10px;
 }
-textarea{
-	height: auto;
-	width: 650px;
-	height: 200px;
-	border-radius: 25px;
-	border: 1px solid #0BCEAF;
-	padding: 20px;
 
-}
-button{
-	border: 1px solid #0BCEAF;
-	padding: 10px 15px;	
-	border-radius: 25px;
-	margin: 10px;
-	text-decoration: none;
-	color: #0BCEAF;	
-	background-color: white;
-}
-/*Contact section ends here*/
+/* Education and experience starts here */
 
-/*The Main section ends here*/
+.edu-exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
-/*Footer section starts here*/
-footer{
-	background-color: #0BCEAF;
-	height: 250px;
-	color: white;	
+.edu-exp .experience {
+    margin-top: 20px;
 }
-.foot-links a{
-	padding: 10px;
-	color: white;
 
+.education,
+.experience {
+    border-left: none;
+    text-align: left;
 }
-.foot-link1, .foot-link2{
-	display: flex;
-	justify-content: center;
-	margin-right: 20px;
-	margin-left: 20px;
+
+.edu-exp span {
+    font-weight: bold;
 }
-.foot-link1 a{
-	padding-top: 50px;
+
+.edu-exp h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.25rem;
+    margin-top: 15px;
+    color: #343B20;
 }
-.right p{
-	text-align: center;
-	color: white;
-	padding-top: 20px;
-	font-style: italic;
+
+.edu-exp .education h4,
+.edu-exp .experience h4 {
+    margin-top: 30px;
 }
+
+.edu-exp .educa
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.service-contents {
+    margin-bottom: 35px;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.service-head .bulet {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0BCEAF;
+}
+
+.service {
+    padding-top: 10px;
+    padding-left: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #343B20;
+}
+
+.service-description {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.service-link {
+    color: #0BCEAF;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.service-link:hover {
+    color: white;
+    background-color: #0BCEAF;
+}
+
+/* Gallery segment starts here */
+
+.gallery-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.gallery-links a {
+    margin: 10px;
+    border: 1px solid rgb(11 206 175);
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: rgb(11 206 175);
+    margin-bottom: 20px;
+}
+
+.gallery-links a:hover {
+    color: #fff;
+    background-color: #0BCEAF;
+}
+
+.photo-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.photo-grid img {
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Testimony section starts here */
+
+/* Testimony section ends here */
+
+/* Blog section starts here */
+
+/* Blog section starts here */
+
+/* Contact section starts here */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #0BCEAF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form-container input,
+textarea {
+    margin: 10px;
+    padding: 0.7rem;
+    border-radius: 25px;
+    border: 1px solid #0BCEAF;
+    line-height: 1.5;
+    width: 100%;
+    color: #0BCEAF;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    border: 1px solid #0BCEAF;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 10px;
+    text-decoration: none;
+    color: #0BCEAF;
+    background-color: white;
+}
+
+/* Contact section ends here */
+
+/* The Main section ends here */
+
+/* Footer section starts here */
+
+footer {
+    background-color: #0BCEAF;
+    height: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-links a {
+    padding: 10px;
+    color: white;
+}
+
+.foot-link1,
+.foot-link2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.foot-link1 a {
+    padding-top: 20px;
+}
+
+.right p {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-style: italic;
+}
+
